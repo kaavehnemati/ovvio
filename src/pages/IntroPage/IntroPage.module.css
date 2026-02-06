@@ -1,0 +1,15 @@
+.introPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8vh;
+}
+
+.logo {
+  width: 60vw;
+  height: auto;
+  cursor: pointer;
+}

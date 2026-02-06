@@ -1,0 +1,68 @@
+.errorBoundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.errorContent {
+  max-width: 600px;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.errorContent h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.errorContent p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.resetButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.resetButton:hover {
+  background-color: #333;
+}
+
+.errorDetails {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.errorDetails summary {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.errorDetails pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

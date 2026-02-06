@@ -1,0 +1,47 @@
+.categories {
+  background-color: #f5f5f5;
+  padding: 80px 40px;
+}
+
+.categoryBlock {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.categoryBlock:last-child {
+  margin-bottom: 0;
+}
+
+.imageLeft {
+  flex-direction: row;
+}
+
+.imageRight {
+  flex-direction: row-reverse;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.titleWrapper {
+  flex: 1;
+  max-width: 50%;
+}
+
+.titleWrapper h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000000;
+}

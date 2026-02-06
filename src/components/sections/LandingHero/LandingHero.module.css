@@ -1,0 +1,37 @@
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url('/hero.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+  margin: 0 0 32px 0;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-align: center;
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  text-align: left;
+}

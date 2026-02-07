@@ -11,22 +11,27 @@ function LandingCategories() {
 
   return (
     <section className={styles.categories}>
-      {CATEGORIES.map((category, index) => (
-        <div
-          key={category.id}
-          className={`${styles.categoryBlock} ${
-            index % 2 === 0 ? styles.imageLeft : styles.imageRight
-          }`}
-          onClick={() => handleCategoryClick(category.id)}
-        >
-          <div className={styles.image}>
-            <img src={category.previewImage} alt={category.title} />
-          </div>
-          <div className={styles.titleWrapper}>
-            <h2>{category.title}</h2>
-          </div>
-        </div>
-      ))}
+      {CATEGORIES.map((category, index) => {
+        const isEven = index % 2 === 0
+        const layoutClass = isEven ? styles.imageLeft : styles.imageRight
+
+        return (
+          <article
+            key={category.id}
+            className={`${styles.categoryBlock} ${layoutClass}`}
+            onClick={() => handleCategoryClick(category.id)}
+          >
+            <div className={styles.imageWrapper}>
+              <img
+                src={category.previewImage}
+                alt={category.title}
+                className={styles.categoryImage}
+              />
+            </div>
+            <h2 className={styles.categoryTitle}>{category.title}</h2>
+          </article>
+        )
+      })}
     </section>
   )
 }

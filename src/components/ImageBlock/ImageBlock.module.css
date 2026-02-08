@@ -1,0 +1,22 @@
+.blockContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  height: 100vh;
+}
+
+.blockHalf {
+  width: 480px;
+}
+
+.blockFull {
+  width: 980px;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

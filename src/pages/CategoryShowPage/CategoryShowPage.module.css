@@ -1,18 +1,29 @@
 .categoryShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
   background-color: #ffffff;
-  padding: 60px 40px;
 }
 
 .content {
+  flex-shrink: 0;
+  width: 700px;
+  height: 100vh;
   display: flex;
-  gap: 60px;
-  max-width: 1400px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  box-sizing: border-box;
 }
 
 .text {
-  flex: 1;
-  max-width: 50%;
+  width: 100%;
 }
 
 .text h1 {
@@ -33,15 +44,10 @@
   margin-bottom: 0;
 }
 
-.imageWrapper {
-  flex: 1;
-  max-width: 50%;
-}
-
-.imageWrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
+.imageSection {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
 .notFound {
